@@ -4,7 +4,7 @@ A responsive personal portfolio for Carl Andrei Lucido, a third-year BS Computer
 
 ## Screenshots
 
-The portfolio includes complete light and dark themes and responsive layouts for desktop, tablet, and mobile. Project preview artwork is rendered directly with HTML and CSS so the static deployment does not depend on stock imagery or unavailable project screenshots.
+The portfolio includes complete light and dark navy themes and responsive layouts for desktop, tablet, and mobile. The Food Ordering System uses a current capture of its live interface, while projects without public demos use custom HTML and CSS previews instead of stock imagery.
 
 After deployment, current page captures can be added here for release documentation.
 
@@ -21,13 +21,13 @@ No package manager, build process, PHP runtime, or JavaScript framework is requi
 
 ## Features
 
-- Responsive editorial-style layout built with the Bootstrap grid
-- Actual professional profile photo supplied with the project
+- Responsive space-inspired layout built with the Bootstrap grid
+- Subtle fine-pointer glow with reduced-motion and touch-device safeguards
 - Persistent light and dark themes with system preference detection
 - Sticky navigation with an active-section indicator
 - Automatically closing mobile navigation
 - Accessible labels, focus states, landmarks, and reduced-motion support
-- Four project cards with custom interface previews and honest availability states
+- Four project cards with a real linked-project capture and honest placeholder states
 - Working external demo link for the Food Ordering System
 - Validated contact form with loading, success, and error states
 - Anonymous contact message inserts through Supabase Row Level Security
@@ -41,8 +41,11 @@ portfolio/
 |-- index.html
 |-- README.md
 |-- assets/
-|   `-- icons/
-|       `-- favicon.svg
+|   |-- icons/
+|   |   `-- favicon.svg
+|   `-- images/
+|       `-- projects/
+|           `-- food-ordering-system.png
 |-- css/
 |   `-- style.css
 |-- js/
@@ -51,7 +54,7 @@ portfolio/
 |   |-- supabase.js
 |   `-- theme.js
 |-- profile-pic/
-|   `-- me.jpg
+|   `-- me.jpg (retained source asset, not displayed)
 `-- supabase/
     `-- setup.sql
 ```

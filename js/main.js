@@ -68,8 +68,40 @@
     });
   });
 
-  const revealItems = document.querySelectorAll(".reveal");
   const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const finePointer = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
+  const pointerGlow = document.getElementById("pointer-glow");
+
+  if (pointerGlow && finePointer && !reducedMotion) {
+    let pointerX = 0;
+    let pointerY = 0;
+    let pointerFrame = null;
+
+    document.addEventListener("pointermove", function movePointerGlow(event) {
+      pointerX = event.clientX;
+      pointerY = event.clientY;
+
+      if (pointerFrame) {
+        return;
+      }
+
+      pointerFrame = window.requestAnimationFrame(function positionPointerGlow() {
+        pointerGlow.style.transform = `translate3d(${pointerX}px, ${pointerY}px, 0) translate(-50%, -50%)`;
+        document.body.classList.add("has-pointer-glow");
+        pointerFrame = null;
+      });
+    }, { passive: true });
+
+    document.addEventListener("pointerleave", function hidePointerGlow() {
+      document.body.classList.remove("has-pointer-glow");
+    });
+
+    window.addEventListener("blur", function hidePointerGlowOnBlur() {
+      document.body.classList.remove("has-pointer-glow");
+    });
+  }
+
+  const revealItems = document.querySelectorAll(".reveal");
 
   if (reducedMotion || !("IntersectionObserver" in window)) {
     revealItems.forEach(function showItem(item) {
