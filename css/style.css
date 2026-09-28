@@ -1464,14 +1464,6 @@ textarea.form-control {
   transform: none;
 }
 
-.form-note {
-  margin: 0;
-  color: var(--text-tertiary);
-  font-size: 0.7rem;
-  line-height: 1.5;
-  text-align: right;
-}
-
 .form-status,
 .noscript-message {
   margin: 1rem 0 0;
@@ -1842,10 +1834,6 @@ html[data-theme="dark"] .feedback-toast .btn-close {
   .project-actions .btn,
   .form-submit-row .btn {
     width: 100%;
-  }
-
-  .form-note {
-    text-align: left;
   }
 
   .toast-container {

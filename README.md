@@ -50,6 +50,7 @@ portfolio/
 |   |-- icons/
 |   |   `-- favicon.svg
 |   `-- images/
+|       |-- portfolio-preview.png
 |       `-- projects/
 |           `-- food-ordering-system.png
 |-- css/
@@ -60,7 +61,7 @@ portfolio/
 |   |-- supabase.js
 |   `-- theme.js
 |-- profile-pic/
-|   `-- me.jpg (social and search profile image)
+|   `-- me.jpg (retained source asset)
 `-- supabase/
     |-- config.toml
     |-- functions/
