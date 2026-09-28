@@ -517,6 +517,18 @@ html[data-theme="dark"] .btn-primary-custom {
   transform: translate(2px, -2px);
 }
 
+.social-icon-github {
+  color: #181717;
+}
+
+.social-icon-linkedin {
+  color: #0a66c2;
+}
+
+html[data-theme="dark"] .social-icon-github {
+  color: #f0f6fc;
+}
+
 .context-label {
   display: flex;
   align-items: center;
@@ -670,6 +682,56 @@ html[data-theme="dark"] .btn-primary-custom {
   font-size: 1rem;
 }
 
+.skill-heading > .skill-category-frontend {
+  border-color: rgba(227, 79, 38, 0.34);
+  background: rgba(227, 79, 38, 0.1);
+  color: #d94822;
+}
+
+.skill-heading > .skill-category-backend {
+  border-color: rgba(119, 123, 180, 0.38);
+  background: rgba(119, 123, 180, 0.12);
+  color: #686cac;
+}
+
+.skill-heading > .skill-category-database {
+  border-color: rgba(62, 207, 142, 0.4);
+  background: rgba(62, 207, 142, 0.11);
+  color: #16845a;
+}
+
+.skill-heading > .skill-category-programming {
+  border-color: rgba(211, 158, 0, 0.4);
+  background: rgba(255, 212, 59, 0.12);
+  color: #9a7100;
+}
+
+.skill-heading > .skill-category-tools {
+  border-color: rgba(240, 80, 50, 0.38);
+  background: rgba(240, 80, 50, 0.1);
+  color: #d34228;
+}
+
+html[data-theme="dark"] .skill-heading > .skill-category-frontend {
+  color: #ff805c;
+}
+
+html[data-theme="dark"] .skill-heading > .skill-category-backend {
+  color: #aaaee8;
+}
+
+html[data-theme="dark"] .skill-heading > .skill-category-database {
+  color: #5ee0a5;
+}
+
+html[data-theme="dark"] .skill-heading > .skill-category-programming {
+  color: #ffd95f;
+}
+
+html[data-theme="dark"] .skill-heading > .skill-category-tools {
+  color: #ff8068;
+}
+
 .skill-heading h3 {
   margin: 0;
   color: var(--text-primary);
@@ -686,6 +748,9 @@ html[data-theme="dark"] .btn-primary-custom {
 
 .skill-tags span,
 .tech-list li {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.38rem;
   padding: 0.34rem 0.6rem;
   border: 1px solid var(--border);
   border-radius: 5px;
@@ -695,6 +760,39 @@ html[data-theme="dark"] .btn-primary-custom {
   font-size: 0.69rem;
   font-weight: 700;
   letter-spacing: 0.015em;
+}
+
+.skill-tags .brand-icon,
+.skill-tags .functional-icon,
+.tech-list .brand-icon,
+.tech-list .functional-icon {
+  flex: 0 0 auto;
+  font-size: 0.95rem;
+  line-height: 1;
+}
+
+.brand-icon-github {
+  color: #181717;
+}
+
+html[data-theme="dark"] .brand-icon-github {
+  color: #f0f6fc;
+}
+
+.functional-icon-api {
+  color: #16845a;
+}
+
+.functional-icon-ajax {
+  color: #d96c14;
+}
+
+html[data-theme="dark"] .functional-icon-api {
+  color: #5ee0a5;
+}
+
+html[data-theme="dark"] .functional-icon-ajax {
+  color: #ffad5a;
 }
 
 /* Projects */
